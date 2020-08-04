@@ -1,4 +1,5 @@
 #!/bin/bash
+cp ./node_modules/seedrandom/seedrandom.min.js .
 cp ./node_modules/mermaid/dist/mermaid.min.js .
 
 mkdir -p fontawesome/css/

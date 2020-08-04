@@ -91,6 +91,7 @@ const deviceScaleFactor = parseInt(scale || 1, 10);
 
   const result = await page.$eval('#container', (container, definition, mermaidConfig, myCSS) => {
     container.textContent = definition
+    Math.seedrandom(definition);
     window.mermaid.initialize(mermaidConfig)
 
     if (myCSS) {
